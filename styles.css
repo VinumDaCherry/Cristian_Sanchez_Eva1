@@ -1,0 +1,101 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f9ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 5px solid #00bfff;
+    animation: fadeIn 2s ease;
+}
+
+main {
+    padding: 30px;
+}
+
+/* Secciones */
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+}
+
+h1, h2 {
+    color: #003366;
+}
+
+img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+footer {
+    text-align: center;
+    background-color: #e6f0ff;
+    padding: 15px;
+    color: #333;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-100px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(100px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.fade-in-delay {
+    animation: fadeIn 3s ease-in-out;
+}
+
+.slide-in-left {
+    animation: slideInLeft 1.2s ease-out;
+}
+
+.slide-in-right {
+    animation: slideInRight 1.2s ease-out;
+}
+
+.slide-in-up {
+    animation: slideInUp 1.2s ease-out;
+}
+
+/* Enlaces */
+a {
+    color: #0055cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
